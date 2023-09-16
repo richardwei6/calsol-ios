@@ -1,0 +1,10 @@
+name: calsol-ios
+targets:
+    calsol-ios:
+        type: application
+        platform: iOS
+        deploymentTarget: 16.0
+        sources: [calsol-ios]
+        settings:
+            PRODUCT_BUNDLE_IDENTIFIER: com.berkeley.calsol-ios
+            TARGETED_DEVICE_FAMILY: 1
