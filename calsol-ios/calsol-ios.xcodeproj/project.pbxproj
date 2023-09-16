@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		084CC76C7570DEE0D54FE491 /* Pods_calsol_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9F8860563F170933F52EF8 /* Pods_calsol_ios.framework */; };
+		1A0883B32AB663D80011DDD0 /* leftBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0883B22AB663D80011DDD0 /* leftBarViewController.swift */; };
+		1A0883B62AB6640E0011DDD0 /* mainContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0883B52AB6640E0011DDD0 /* mainContentViewController.swift */; };
+		1A0883B82AB664520011DDD0 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0883B72AB664520011DDD0 /* AppUtility.swift */; };
 		1AC5CD172AB65FF0009A0481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5CD162AB65FF0009A0481 /* AppDelegate.swift */; };
 		1AC5CD192AB65FF0009A0481 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5CD182AB65FF0009A0481 /* SceneDelegate.swift */; };
-		1AC5CD1B2AB65FF0009A0481 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5CD1A2AB65FF0009A0481 /* ViewController.swift */; };
-		1AC5CD1E2AB65FF0009A0481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC5CD1C2AB65FF0009A0481 /* Main.storyboard */; };
+		1AC5CD1B2AB65FF0009A0481 /* layoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5CD1A2AB65FF0009A0481 /* layoutViewController.swift */; };
 		1AC5CD202AB65FF1009A0481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC5CD1F2AB65FF1009A0481 /* Assets.xcassets */; };
 		1AC5CD232AB65FF1009A0481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC5CD212AB65FF1009A0481 /* LaunchScreen.storyboard */; };
 		1AC5CD2E2AB65FF1009A0481 /* calsol_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5CD2D2AB65FF1009A0481 /* calsol_iosTests.swift */; };
 		1AC5CD382AB65FF1009A0481 /* calsol_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5CD372AB65FF1009A0481 /* calsol_iosUITests.swift */; };
 		1AC5CD3A2AB65FF1009A0481 /* calsol_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5CD392AB65FF1009A0481 /* calsol_iosUITestsLaunchTests.swift */; };
+		264D04378A63FD139481F562 /* Pods_calsol_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA892F29860D65D9B570B270 /* Pods_calsol_iosTests.framework */; };
+		4924F40B8D5718B6A8E83386 /* Pods_calsol_ios_calsol_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F9334978C4B8E98A60938D /* Pods_calsol_ios_calsol_iosUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0883B22AB663D80011DDD0 /* leftBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leftBarViewController.swift; sourceTree = "<group>"; };
+		1A0883B52AB6640E0011DDD0 /* mainContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainContentViewController.swift; sourceTree = "<group>"; };
+		1A0883B72AB664520011DDD0 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		1AC5CD132AB65FF0009A0481 /* calsol-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "calsol-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC5CD162AB65FF0009A0481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AC5CD182AB65FF0009A0481 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1AC5CD1A2AB65FF0009A0481 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1AC5CD1D2AB65FF0009A0481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AC5CD1A2AB65FF0009A0481 /* layoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = layoutViewController.swift; sourceTree = "<group>"; };
 		1AC5CD1F2AB65FF1009A0481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AC5CD222AB65FF1009A0481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AC5CD242AB65FF1009A0481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,15 @@
 		1AC5CD332AB65FF1009A0481 /* calsol-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "calsol-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC5CD372AB65FF1009A0481 /* calsol_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calsol_iosUITests.swift; sourceTree = "<group>"; };
 		1AC5CD392AB65FF1009A0481 /* calsol_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calsol_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6C9F8860563F170933F52EF8 /* Pods_calsol_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calsol_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CA2EED98DA0A1531832DDB /* Pods-calsol-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calsol-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-calsol-iosTests/Pods-calsol-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ABA27E476748D4CEAB868510 /* Pods-calsol-ios-calsol-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calsol-ios-calsol-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-calsol-ios-calsol-iosUITests/Pods-calsol-ios-calsol-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C70DD28AE8831399E6756033 /* Pods-calsol-ios-calsol-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calsol-ios-calsol-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-calsol-ios-calsol-iosUITests/Pods-calsol-ios-calsol-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA892F29860D65D9B570B270 /* Pods_calsol_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calsol_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22FDB2163D743A1F2F9C436 /* Pods-calsol-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calsol-ios.release.xcconfig"; path = "Target Support Files/Pods-calsol-ios/Pods-calsol-ios.release.xcconfig"; sourceTree = "<group>"; };
+		D23E80ADE1956295C373FD65 /* Pods-calsol-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calsol-iosTests.release.xcconfig"; path = "Target Support Files/Pods-calsol-iosTests/Pods-calsol-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8F9334978C4B8E98A60938D /* Pods_calsol_ios_calsol_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calsol_ios_calsol_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEB3DEFF8592ABF3A1D4A7B9 /* Pods-calsol-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calsol-ios.debug.xcconfig"; path = "Target Support Files/Pods-calsol-ios/Pods-calsol-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084CC76C7570DEE0D54FE491 /* Pods_calsol_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				264D04378A63FD139481F562 /* Pods_calsol_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4924F40B8D5718B6A8E83386 /* Pods_calsol_ios_calsol_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A0883AD2AB663790011DDD0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1A0883B42AB663FE0011DDD0 /* mainContentView */,
+				1A0883B12AB663CA0011DDD0 /* leftBarView */,
+				1A0883B02AB663C30011DDD0 /* layoutView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1A0883AE2AB6637D0011DDD0 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		1A0883B02AB663C30011DDD0 /* layoutView */ = {
+			isa = PBXGroup;
+			children = (
+				1AC5CD1A2AB65FF0009A0481 /* layoutViewController.swift */,
+			);
+			path = layoutView;
+			sourceTree = "<group>";
+		};
+		1A0883B12AB663CA0011DDD0 /* leftBarView */ = {
+			isa = PBXGroup;
+			children = (
+				1A0883B22AB663D80011DDD0 /* leftBarViewController.swift */,
+			);
+			path = leftBarView;
+			sourceTree = "<group>";
+		};
+		1A0883B42AB663FE0011DDD0 /* mainContentView */ = {
+			isa = PBXGroup;
+			children = (
+				1A0883B52AB6640E0011DDD0 /* mainContentViewController.swift */,
+			);
+			path = mainContentView;
+			sourceTree = "<group>";
+		};
 		1AC5CD0A2AB65FF0009A0481 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +143,8 @@
 				1AC5CD2C2AB65FF1009A0481 /* calsol-iosTests */,
 				1AC5CD362AB65FF1009A0481 /* calsol-iosUITests */,
 				1AC5CD142AB65FF0009A0481 /* Products */,
+				96453786D096F019C8B538E8 /* Pods */,
+				EDE789628758CD3DD0E61B0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,11 +162,12 @@
 			isa = PBXGroup;
 			children = (
 				1AC5CD162AB65FF0009A0481 /* AppDelegate.swift */,
+				1A0883B72AB664520011DDD0 /* AppUtility.swift */,
 				1AC5CD182AB65FF0009A0481 /* SceneDelegate.swift */,
-				1AC5CD1A2AB65FF0009A0481 /* ViewController.swift */,
-				1AC5CD1C2AB65FF0009A0481 /* Main.storyboard */,
-				1AC5CD1F2AB65FF1009A0481 /* Assets.xcassets */,
 				1AC5CD212AB65FF1009A0481 /* LaunchScreen.storyboard */,
+				1A0883AE2AB6637D0011DDD0 /* Backend */,
+				1A0883AD2AB663790011DDD0 /* UI */,
+				1AC5CD1F2AB65FF1009A0481 /* Assets.xcassets */,
 				1AC5CD242AB65FF1009A0481 /* Info.plist */,
 			);
 			path = "calsol-ios";
@@ -127,6 +190,29 @@
 			path = "calsol-iosUITests";
 			sourceTree = "<group>";
 		};
+		96453786D096F019C8B538E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEB3DEFF8592ABF3A1D4A7B9 /* Pods-calsol-ios.debug.xcconfig */,
+				D22FDB2163D743A1F2F9C436 /* Pods-calsol-ios.release.xcconfig */,
+				ABA27E476748D4CEAB868510 /* Pods-calsol-ios-calsol-iosUITests.debug.xcconfig */,
+				C70DD28AE8831399E6756033 /* Pods-calsol-ios-calsol-iosUITests.release.xcconfig */,
+				77CA2EED98DA0A1531832DDB /* Pods-calsol-iosTests.debug.xcconfig */,
+				D23E80ADE1956295C373FD65 /* Pods-calsol-iosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDE789628758CD3DD0E61B0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C9F8860563F170933F52EF8 /* Pods_calsol_ios.framework */,
+				F8F9334978C4B8E98A60938D /* Pods_calsol_ios_calsol_iosUITests.framework */,
+				CA892F29860D65D9B570B270 /* Pods_calsol_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AC5CD3D2AB65FF1009A0481 /* Build configuration list for PBXNativeTarget "calsol-ios" */;
 			buildPhases = (
+				C06D653875015836508F17E5 /* [CP] Check Pods Manifest.lock */,
 				1AC5CD0F2AB65FF0009A0481 /* Sources */,
 				1AC5CD102AB65FF0009A0481 /* Frameworks */,
 				1AC5CD112AB65FF0009A0481 /* Resources */,
+				8976FC901F9486F4C9E8FBB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AC5CD402AB65FF1009A0481 /* Build configuration list for PBXNativeTarget "calsol-iosTests" */;
 			buildPhases = (
+				387B787C8B7DA5E785C8E62F /* [CP] Check Pods Manifest.lock */,
 				1AC5CD252AB65FF1009A0481 /* Sources */,
 				1AC5CD262AB65FF1009A0481 /* Frameworks */,
 				1AC5CD272AB65FF1009A0481 /* Resources */,
@@ -169,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AC5CD432AB65FF1009A0481 /* Build configuration list for PBXNativeTarget "calsol-iosUITests" */;
 			buildPhases = (
+				4ECDAD68A414C908AF6ABE69 /* [CP] Check Pods Manifest.lock */,
 				1AC5CD2F2AB65FF1009A0481 /* Sources */,
 				1AC5CD302AB65FF1009A0481 /* Frameworks */,
 				1AC5CD312AB65FF1009A0481 /* Resources */,
+				786B08B19B3448BE84ECD897 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +324,6 @@
 			files = (
 				1AC5CD232AB65FF1009A0481 /* LaunchScreen.storyboard in Resources */,
 				1AC5CD202AB65FF1009A0481 /* Assets.xcassets in Resources */,
-				1AC5CD1E2AB65FF0009A0481 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,12 +343,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		387B787C8B7DA5E785C8E62F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calsol-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ECDAD68A414C908AF6ABE69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calsol-ios-calsol-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		786B08B19B3448BE84ECD897 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calsol-ios-calsol-iosUITests/Pods-calsol-ios-calsol-iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calsol-ios-calsol-iosUITests/Pods-calsol-ios-calsol-iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-calsol-ios-calsol-iosUITests/Pods-calsol-ios-calsol-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8976FC901F9486F4C9E8FBB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calsol-ios/Pods-calsol-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calsol-ios/Pods-calsol-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-calsol-ios/Pods-calsol-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C06D653875015836508F17E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calsol-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1AC5CD0F2AB65FF0009A0481 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AC5CD1B2AB65FF0009A0481 /* ViewController.swift in Sources */,
+				1AC5CD1B2AB65FF0009A0481 /* layoutViewController.swift in Sources */,
+				1A0883B32AB663D80011DDD0 /* leftBarViewController.swift in Sources */,
+				1A0883B82AB664520011DDD0 /* AppUtility.swift in Sources */,
+				1A0883B62AB6640E0011DDD0 /* mainContentViewController.swift in Sources */,
 				1AC5CD172AB65FF0009A0481 /* AppDelegate.swift in Sources */,
 				1AC5CD192AB65FF0009A0481 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +493,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1AC5CD1C2AB65FF0009A0481 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1AC5CD1D2AB65FF0009A0481 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1AC5CD212AB65FF1009A0481 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +620,7 @@
 		};
 		1AC5CD3E2AB65FF1009A0481 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEB3DEFF8592ABF3A1D4A7B9 /* Pods-calsol-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,7 +631,6 @@
 				INFOPLIST_FILE = "calsol-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,6 +648,7 @@
 		};
 		1AC5CD3F2AB65FF1009A0481 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D22FDB2163D743A1F2F9C436 /* Pods-calsol-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -470,7 +659,6 @@
 				INFOPLIST_FILE = "calsol-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,6 +676,7 @@
 		};
 		1AC5CD412AB65FF1009A0481 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77CA2EED98DA0A1531832DDB /* Pods-calsol-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +697,7 @@
 		};
 		1AC5CD422AB65FF1009A0481 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D23E80ADE1956295C373FD65 /* Pods-calsol-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +718,7 @@
 		};
 		1AC5CD442AB65FF1009A0481 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABA27E476748D4CEAB868510 /* Pods-calsol-ios-calsol-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +737,7 @@
 		};
 		1AC5CD452AB65FF1009A0481 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C70DD28AE8831399E6756033 /* Pods-calsol-ios-calsol-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

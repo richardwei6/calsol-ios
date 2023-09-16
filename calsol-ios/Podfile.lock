@@ -1,0 +1,18 @@
+PODS:
+  - DGCharts (5.0.0):
+    - DGCharts/Core (= 5.0.0)
+  - DGCharts/Core (5.0.0)
+
+DEPENDENCIES:
+  - DGCharts
+
+SPEC REPOS:
+  trunk:
+    - DGCharts
+
+SPEC CHECKSUMS:
+  DGCharts: 6e0cf2644e8f81ad13f04caa8bc18502870a1c54
+
+PODFILE CHECKSUM: 1ea80629fdc3c0699d26565c12bee0b6b6075a70
+
+COCOAPODS: 1.11.3

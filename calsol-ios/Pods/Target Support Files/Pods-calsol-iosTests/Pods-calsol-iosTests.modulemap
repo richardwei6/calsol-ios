@@ -1,0 +1,6 @@
+framework module Pods_calsol_iosTests {
+  umbrella header "Pods-calsol-iosTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
