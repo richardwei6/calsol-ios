@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AC5CD172AB65FF0009A0481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5CD162AB65FF0009A0481 /* AppDelegate.swift */; };
+		1AC5CD192AB65FF0009A0481 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5CD182AB65FF0009A0481 /* SceneDelegate.swift */; };
+		1AC5CD1B2AB65FF0009A0481 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5CD1A2AB65FF0009A0481 /* ViewController.swift */; };
+		1AC5CD1E2AB65FF0009A0481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC5CD1C2AB65FF0009A0481 /* Main.storyboard */; };
+		1AC5CD202AB65FF1009A0481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC5CD1F2AB65FF1009A0481 /* Assets.xcassets */; };
+		1AC5CD232AB65FF1009A0481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC5CD212AB65FF1009A0481 /* LaunchScreen.storyboard */; };
+		1AC5CD2E2AB65FF1009A0481 /* calsol_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5CD2D2AB65FF1009A0481 /* calsol_iosTests.swift */; };
+		1AC5CD382AB65FF1009A0481 /* calsol_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5CD372AB65FF1009A0481 /* calsol_iosUITests.swift */; };
+		1AC5CD3A2AB65FF1009A0481 /* calsol_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5CD392AB65FF1009A0481 /* calsol_iosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AC5CD2A2AB65FF1009A0481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC5CD0B2AB65FF0009A0481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AC5CD122AB65FF0009A0481;
+			remoteInfo = "calsol-ios";
+		};
+		1AC5CD342AB65FF1009A0481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC5CD0B2AB65FF0009A0481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AC5CD122AB65FF0009A0481;
+			remoteInfo = "calsol-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AC5CD132AB65FF0009A0481 /* calsol-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "calsol-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC5CD162AB65FF0009A0481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AC5CD182AB65FF0009A0481 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1AC5CD1A2AB65FF0009A0481 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AC5CD1D2AB65FF0009A0481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AC5CD1F2AB65FF1009A0481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AC5CD222AB65FF1009A0481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AC5CD242AB65FF1009A0481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AC5CD292AB65FF1009A0481 /* calsol-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "calsol-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC5CD2D2AB65FF1009A0481 /* calsol_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calsol_iosTests.swift; sourceTree = "<group>"; };
+		1AC5CD332AB65FF1009A0481 /* calsol-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "calsol-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC5CD372AB65FF1009A0481 /* calsol_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calsol_iosUITests.swift; sourceTree = "<group>"; };
+		1AC5CD392AB65FF1009A0481 /* calsol_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calsol_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AC5CD102AB65FF0009A0481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AC5CD262AB65FF1009A0481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AC5CD302AB65FF1009A0481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AC5CD0A2AB65FF0009A0481 = {
+			isa = PBXGroup;
+			children = (
+				1AC5CD152AB65FF0009A0481 /* calsol-ios */,
+				1AC5CD2C2AB65FF1009A0481 /* calsol-iosTests */,
+				1AC5CD362AB65FF1009A0481 /* calsol-iosUITests */,
+				1AC5CD142AB65FF0009A0481 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AC5CD142AB65FF0009A0481 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AC5CD132AB65FF0009A0481 /* calsol-ios.app */,
+				1AC5CD292AB65FF1009A0481 /* calsol-iosTests.xctest */,
+				1AC5CD332AB65FF1009A0481 /* calsol-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AC5CD152AB65FF0009A0481 /* calsol-ios */ = {
+			isa = PBXGroup;
+			children = (
+				1AC5CD162AB65FF0009A0481 /* AppDelegate.swift */,
+				1AC5CD182AB65FF0009A0481 /* SceneDelegate.swift */,
+				1AC5CD1A2AB65FF0009A0481 /* ViewController.swift */,
+				1AC5CD1C2AB65FF0009A0481 /* Main.storyboard */,
+				1AC5CD1F2AB65FF1009A0481 /* Assets.xcassets */,
+				1AC5CD212AB65FF1009A0481 /* LaunchScreen.storyboard */,
+				1AC5CD242AB65FF1009A0481 /* Info.plist */,
+			);
+			path = "calsol-ios";
+			sourceTree = "<group>";
+		};
+		1AC5CD2C2AB65FF1009A0481 /* calsol-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AC5CD2D2AB65FF1009A0481 /* calsol_iosTests.swift */,
+			);
+			path = "calsol-iosTests";
+			sourceTree = "<group>";
+		};
+		1AC5CD362AB65FF1009A0481 /* calsol-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1AC5CD372AB65FF1009A0481 /* calsol_iosUITests.swift */,
+				1AC5CD392AB65FF1009A0481 /* calsol_iosUITestsLaunchTests.swift */,
+			);
+			path = "calsol-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AC5CD122AB65FF0009A0481 /* calsol-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AC5CD3D2AB65FF1009A0481 /* Build configuration list for PBXNativeTarget "calsol-ios" */;
+			buildPhases = (
+				1AC5CD0F2AB65FF0009A0481 /* Sources */,
+				1AC5CD102AB65FF0009A0481 /* Frameworks */,
+				1AC5CD112AB65FF0009A0481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "calsol-ios";
+			productName = "calsol-ios";
+			productReference = 1AC5CD132AB65FF0009A0481 /* calsol-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AC5CD282AB65FF1009A0481 /* calsol-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AC5CD402AB65FF1009A0481 /* Build configuration list for PBXNativeTarget "calsol-iosTests" */;
+			buildPhases = (
+				1AC5CD252AB65FF1009A0481 /* Sources */,
+				1AC5CD262AB65FF1009A0481 /* Frameworks */,
+				1AC5CD272AB65FF1009A0481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AC5CD2B2AB65FF1009A0481 /* PBXTargetDependency */,
+			);
+			name = "calsol-iosTests";
+			productName = "calsol-iosTests";
+			productReference = 1AC5CD292AB65FF1009A0481 /* calsol-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1AC5CD322AB65FF1009A0481 /* calsol-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AC5CD432AB65FF1009A0481 /* Build configuration list for PBXNativeTarget "calsol-iosUITests" */;
+			buildPhases = (
+				1AC5CD2F2AB65FF1009A0481 /* Sources */,
+				1AC5CD302AB65FF1009A0481 /* Frameworks */,
+				1AC5CD312AB65FF1009A0481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AC5CD352AB65FF1009A0481 /* PBXTargetDependency */,
+			);
+			name = "calsol-iosUITests";
+			productName = "calsol-iosUITests";
+			productReference = 1AC5CD332AB65FF1009A0481 /* calsol-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AC5CD0B2AB65FF0009A0481 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1AC5CD122AB65FF0009A0481 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					1AC5CD282AB65FF1009A0481 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 1AC5CD122AB65FF0009A0481;
+					};
+					1AC5CD322AB65FF1009A0481 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 1AC5CD122AB65FF0009A0481;
+					};
+				};
+			};
+			buildConfigurationList = 1AC5CD0E2AB65FF0009A0481 /* Build configuration list for PBXProject "calsol-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AC5CD0A2AB65FF0009A0481;
+			productRefGroup = 1AC5CD142AB65FF0009A0481 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AC5CD122AB65FF0009A0481 /* calsol-ios */,
+				1AC5CD282AB65FF1009A0481 /* calsol-iosTests */,
+				1AC5CD322AB65FF1009A0481 /* calsol-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AC5CD112AB65FF0009A0481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC5CD232AB65FF1009A0481 /* LaunchScreen.storyboard in Resources */,
+				1AC5CD202AB65FF1009A0481 /* Assets.xcassets in Resources */,
+				1AC5CD1E2AB65FF0009A0481 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AC5CD272AB65FF1009A0481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AC5CD312AB65FF1009A0481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AC5CD0F2AB65FF0009A0481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC5CD1B2AB65FF0009A0481 /* ViewController.swift in Sources */,
+				1AC5CD172AB65FF0009A0481 /* AppDelegate.swift in Sources */,
+				1AC5CD192AB65FF0009A0481 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AC5CD252AB65FF1009A0481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC5CD2E2AB65FF1009A0481 /* calsol_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AC5CD2F2AB65FF1009A0481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC5CD3A2AB65FF1009A0481 /* calsol_iosUITestsLaunchTests.swift in Sources */,
+				1AC5CD382AB65FF1009A0481 /* calsol_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AC5CD2B2AB65FF1009A0481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AC5CD122AB65FF0009A0481 /* calsol-ios */;
+			targetProxy = 1AC5CD2A2AB65FF1009A0481 /* PBXContainerItemProxy */;
+		};
+		1AC5CD352AB65FF1009A0481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AC5CD122AB65FF0009A0481 /* calsol-ios */;
+			targetProxy = 1AC5CD342AB65FF1009A0481 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AC5CD1C2AB65FF0009A0481 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AC5CD1D2AB65FF0009A0481 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AC5CD212AB65FF1009A0481 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AC5CD222AB65FF1009A0481 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AC5CD3B2AB65FF1009A0481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1AC5CD3C2AB65FF1009A0481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AC5CD3E2AB65FF1009A0481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5E4JP96ES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "calsol-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berkeley.calsol-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AC5CD3F2AB65FF1009A0481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5E4JP96ES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "calsol-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berkeley.calsol-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1AC5CD412AB65FF1009A0481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5E4JP96ES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berkeley.calsol-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calsol-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/calsol-ios";
+			};
+			name = Debug;
+		};
+		1AC5CD422AB65FF1009A0481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5E4JP96ES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berkeley.calsol-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calsol-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/calsol-ios";
+			};
+			name = Release;
+		};
+		1AC5CD442AB65FF1009A0481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5E4JP96ES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berkeley.calsol-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "calsol-ios";
+			};
+			name = Debug;
+		};
+		1AC5CD452AB65FF1009A0481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P5E4JP96ES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berkeley.calsol-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "calsol-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AC5CD0E2AB65FF0009A0481 /* Build configuration list for PBXProject "calsol-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AC5CD3B2AB65FF1009A0481 /* Debug */,
+				1AC5CD3C2AB65FF1009A0481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AC5CD3D2AB65FF1009A0481 /* Build configuration list for PBXNativeTarget "calsol-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AC5CD3E2AB65FF1009A0481 /* Debug */,
+				1AC5CD3F2AB65FF1009A0481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AC5CD402AB65FF1009A0481 /* Build configuration list for PBXNativeTarget "calsol-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AC5CD412AB65FF1009A0481 /* Debug */,
+				1AC5CD422AB65FF1009A0481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AC5CD432AB65FF1009A0481 /* Build configuration list for PBXNativeTarget "calsol-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AC5CD442AB65FF1009A0481 /* Debug */,
+				1AC5CD452AB65FF1009A0481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AC5CD0B2AB65FF0009A0481 /* Project object */;
+}
