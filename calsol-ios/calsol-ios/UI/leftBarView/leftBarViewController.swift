@@ -9,10 +9,18 @@ import Foundation
 import UIKit
 
 class leftBarViewController : UIViewController{
+        
+    //
     
     override func viewDidLoad() {
         super.viewDidLoad();
         
+    }
+    
+    //
+    
+    public static func getLeftBarViewWidth() -> CGFloat{
+        return AppUtility.getCurrentScreenSize().width;
     }
     
 }
