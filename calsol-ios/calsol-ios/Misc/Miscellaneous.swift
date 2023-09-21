@@ -16,6 +16,10 @@ let BackgroundGrayColor = UIColor(named: "BackgroundGrayColor")!;
 let BackgroundColor = UIColor(named: "BackgroundColor")!;
 //
 
+// Macros
+let btMgr = btManager.obj;
+//
+
 // Functions
 internal func linkViewControllerToView(view: UIView, controller: UIViewController, parentController: UIViewController){
     controller.willMove(toParent: parentController);
@@ -25,3 +29,4 @@ internal func linkViewControllerToView(view: UIView, controller: UIViewControlle
     controller.didMove(toParent: parentController);
 }
 //
+

@@ -16,14 +16,23 @@ class btManager : NSObject{
     
     //
     
-    internal var centralManager : CBCentralManager!;
+    internal var centralMgr : CBCentralManager!;
     
     //
     
     private override init(){
         super.init();
         print("created new instance of btManager")
-        centralManager = CBCentralManager(delegate: self, queue: nil);
+        centralMgr = CBCentralManager(delegate: self, queue: nil);
+    }
+    
+    //
+    
+    public func scan(){
+        if getCentralMgrState() != .poweredOn{
+            print("BT not in 'ON' state");
+            return;
+        }
     }
     
     //
@@ -40,5 +49,8 @@ class btManager : NSObject{
             print("Unknown error")
         }
     }
-    
+
+    internal func getCentralMgrState() -> CBManagerState{
+        return centralMgr.state;
+    }
 }

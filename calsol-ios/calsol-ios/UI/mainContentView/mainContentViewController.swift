@@ -13,6 +13,7 @@ class mainContentViewController : UIViewController{
     
     @objc func handleTestClick(_ sender: UIButton){
         print("test");
+        btMgr.scan();
     }
     
     //
