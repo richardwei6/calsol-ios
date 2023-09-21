@@ -22,6 +22,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = layoutViewController()
         self.window = window
         window.makeKeyAndVisible()
+        
+        //
+        
+        btManager.obj; // init btManager singleton
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
