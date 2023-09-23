@@ -11,7 +11,7 @@ import CoreBluetooth
 extension btManager : CBCentralManagerDelegate{
     // CBCentralManagerDelegate
     
-    func centralManagerDidUpdateState(_ central: CBCentralManager) {
+    internal func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state{
         case .poweredOff:
             print("BT OFF")
@@ -22,5 +22,21 @@ extension btManager : CBCentralManagerDelegate{
         default: // only called if an error occurred
             errorHandler(central.state);
         }
+    }
+    
+    internal func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        /*
+         The discovered peripheral is recognized and can be stored as a CBPeripheral.
+         The discovered peripheral has stored advertisement data.
+         The current received signal strength indicator (RSSI) of the peripheral, in decibels.
+         */
+        
+        if peripheral.name != nil{
+            print(" ---- : \(peripheral.name)")
+            print("Peripheral discovered: \(peripheral)")
+            print("Advertisement data: \(advertisementData)")
+            print(" ---- ")
+        }
+        
     }
 }

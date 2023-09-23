@@ -33,6 +33,8 @@ class btManager : NSObject{
             print("BT not in 'ON' state");
             return;
         }
+        
+        startScanning();
     }
     
     //

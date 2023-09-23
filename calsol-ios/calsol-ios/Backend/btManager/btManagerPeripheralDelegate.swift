@@ -25,7 +25,8 @@ extension btManager : CBPeripheralDelegate{
     //
     
     internal func startScanning(){
-        centralMgr?.scanForPeripherals(withServices: [CBUUIDs.BLEService_UUID]);
+        print("started scanning")
+        centralMgr?.scanForPeripherals(withServices: []);
     }
     
 }
