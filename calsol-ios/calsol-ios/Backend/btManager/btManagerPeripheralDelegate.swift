@@ -10,23 +10,42 @@ import CoreBluetooth
 
 extension btManager : CBPeripheralDelegate{
     
-    // https://learn.adafruit.com/build-a-bluetooth-app-using-swift-5?view=all
-    internal struct CBUUIDs{
-
-        static let kBLEService_UUID = "6e400001-b5a3-f393-e0a9-e50e24dcca9e"
-        static let kBLE_Characteristic_uuid_Tx = "6e400002-b5a3-f393-e0a9-e50e24dcca9e"
-        static let kBLE_Characteristic_uuid_Rx = "6e400003-b5a3-f393-e0a9-e50e24dcca9e"
-
-        static let BLEService_UUID = CBUUID(string: kBLEService_UUID)
-        static let BLE_Characteristic_uuid_Tx = CBUUID(string: kBLE_Characteristic_uuid_Tx)//(Property = Write without response)
-        static let BLE_Characteristic_uuid_Rx = CBUUID(string: kBLE_Characteristic_uuid_Rx)// (Property = Read/Notify)
+    internal func disconnectPeripheral(){
+        if let peripheral = blePeripheral {
+            print("disconnected peripheral");
+            centralMgr?.cancelPeripheralConnection(peripheral);
+        }
     }
     
-    //
+    private func discoverCharacteristicsFor(services: [CBService], _ peripheral: CBPeripheral){
+        //discover the all characteristics of each of the services
+        for service in services {
+            peripheral.discoverCharacteristics(nil, for: service);
+        }
+    }
     
-    internal func startScanning(){
-        print("started scanning")
-        centralMgr?.scanForPeripherals(withServices: []);
+    // CBPeripheralDelegate
+    
+    internal func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
+        if error != nil{
+            print("Error discovering services: \(error?.localizedDescription)");
+            return;
+        }
+        
+        guard let services = peripheral.services else{
+            return;
+        }
+        
+        discoverCharacteristicsFor(services: services, peripheral);
+        
+        //
+        
+        print("Discovered services: \(services)")
+        
+    }
+    
+    internal func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
+        print("discovered characteristics for \(service)")
     }
     
 }

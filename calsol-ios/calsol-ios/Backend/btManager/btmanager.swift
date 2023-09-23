@@ -17,6 +17,7 @@ class btManager : NSObject{
     //
     
     internal var centralMgr : CBCentralManager!;
+    internal var blePeripheral : CBPeripheral? = nil;
     
     //
     
@@ -35,6 +36,14 @@ class btManager : NSObject{
         }
         
         startScanning();
+    }
+    
+    public func isConnectedToBoard() -> Bool{
+        return blePeripheral != nil && blePeripheral!.state == .connected;
+    }
+    
+    public func disconnectFromBoard(){
+        disconnectPeripheral();
     }
     
     //

@@ -9,7 +9,31 @@ import Foundation
 import CoreBluetooth
 
 extension btManager : CBCentralManagerDelegate{
-    // CBCentralManagerDelegate
+    
+    // https://learn.adafruit.com/build-a-bluetooth-app-using-swift-5?view=all
+    internal struct CBUUIDs{
+
+        static let kBLEService_UUID = "6e400001-b5a3-f393-e0a9-e50e24dcca9e"
+        /*static let kBLE_Characteristic_uuid_Tx = "6e400002-b5a3-f393-e0a9-e50e24dcca9e"
+        static let kBLE_Characteristic_uuid_Rx = "6e400003-b5a3-f393-e0a9-e50e24dcca9e"*/
+
+        static let BLEService_UUID = CBUUID(string: kBLEService_UUID)
+        /*static let BLE_Characteristic_uuid_Tx = CBUUID(string: kBLE_Characteristic_uuid_Tx)//(Property = Write without response)
+        static let BLE_Characteristic_uuid_Rx = CBUUID(string: kBLE_Characteristic_uuid_Rx)// (Property = Read/Notify)*/
+        
+        static let telemetryBoardBLEIdentifier = CBUUID(string: "22302FCA-AB18-E2C8-E0F2-F57CE56E7D43") // THIS CHANGES SOMETIMES - need to switch to another way of uniquely identifying the board
+    }
+    
+    //
+    
+    internal func startScanning(){
+        print("started scanning")
+        centralMgr?.scanForPeripherals(withServices: []);
+    }
+    
+    internal func stopScanning(){
+        centralMgr?.stopScan();
+    }
     
     internal func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state{
@@ -24,6 +48,8 @@ extension btManager : CBCentralManagerDelegate{
         }
     }
     
+    // CBCentralManagerDelegate
+    
     internal func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         /*
          The discovered peripheral is recognized and can be stored as a CBPeripheral.
@@ -31,12 +57,29 @@ extension btManager : CBCentralManagerDelegate{
          The current received signal strength indicator (RSSI) of the peripheral, in decibels.
          */
         
-        if peripheral.name != nil{
-            print(" ---- : \(peripheral.name)")
-            print("Peripheral discovered: \(peripheral)")
-            print("Advertisement data: \(advertisementData)")
-            print(" ---- ")
+        if let name = peripheral.name{
+            if peripheral.identifier.uuidString == CBUUIDs.telemetryBoardBLEIdentifier.uuidString{
+                print(" ---- : \(name)")
+                print("Peripheral discovered: \(peripheral)")
+                print("Advertisement data: \(advertisementData)")
+                print("RSSI: \(RSSI)")
+                print(" ---- ")
+                
+                blePeripheral = peripheral;
+                
+                blePeripheral?.delegate = self;
+                
+                centralMgr.connect(blePeripheral!);
+            }
         }
         
     }
+    
+    internal func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+        print("successfully connected to peripheral \(peripheral.name)");
+        stopScanning();
+        blePeripheral?.discoverServices([]);
+    }
+    
+    //
 }
