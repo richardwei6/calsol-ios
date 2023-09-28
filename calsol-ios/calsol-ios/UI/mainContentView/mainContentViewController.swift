@@ -10,6 +10,9 @@ import UIKit
 
 class mainContentViewController : UIViewController{
     
+    internal let mainScrollView = UIScrollView();
+    
+    //
     
     @objc func handleTestClick(_ sender: UIButton){
         print("test");
@@ -21,10 +24,9 @@ class mainContentViewController : UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad();
         
-        //self.view.backgroundColor = .brown
         //
         
-        let testButtonWidth = self.view.frame.width * 0.4
+        /*let testButtonWidth = self.view.frame.width * 0.4
         let testButtonHeight = testButtonWidth * 0.6
         let testButtonFrame = CGRect(x: (self.view.frame.width / 2) - (testButtonWidth / 2), y: (self.view.frame.height / 2), width: testButtonWidth, height: testButtonHeight);
         let testButton = UIButton(frame: testButtonFrame);
@@ -37,8 +39,23 @@ class mainContentViewController : UIViewController{
         
         testButton.addTarget(self, action: #selector(self.handleTestClick), for: .touchUpInside)
         
-        self.view.addSubview(testButton);
+        self.view.addSubview(testButton);*/
         
+        //
+        
+        renderMainScrollView();
+    }
+    
+    //
+    
+    internal func renderMainScrollView(){
+        
+        let mainScrollViewFrame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height);
+        mainScrollView.frame = mainScrollViewFrame;
+        
+        mainScrollView.backgroundColor = .systemRed
+        
+        self.view.addSubview(mainScrollView);
     }
     
 }

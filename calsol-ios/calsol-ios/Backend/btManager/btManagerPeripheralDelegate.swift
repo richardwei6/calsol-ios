@@ -46,6 +46,12 @@ extension btManager : CBPeripheralDelegate{
     
     internal func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
         print("discovered characteristics for \(service)")
+        print(" -> \(service.characteristics)")
+        print(service.characteristics?[0].value)
+    }
+    
+    internal func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?){
+        //var characteristicASCIIValue = NSString()
     }
     
 }
