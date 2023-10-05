@@ -8,6 +8,12 @@
 import Foundation
 import UIKit
 
+// App Constants
+
+let defaultContentViewIndex : Int = 0;
+let contentViewControllers : [UIViewController] = [graphViewController()]
+
+
 // Colors
 let mainThemeColor = UIColor(named: "mainThemeColor")!;
 let InverseBackgroundColor = UIColor(named: "InverseBackgroundColor")!;

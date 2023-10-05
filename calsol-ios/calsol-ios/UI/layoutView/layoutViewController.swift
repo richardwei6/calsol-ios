@@ -24,6 +24,11 @@ class layoutViewController: UIViewController {
         //
         
         setupLayout();
+        
+        //
+        
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan));
+        self.view.addGestureRecognizer(panGesture);
     }
     
     //

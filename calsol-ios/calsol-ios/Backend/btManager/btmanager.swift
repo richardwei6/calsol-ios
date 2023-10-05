@@ -51,13 +51,13 @@ class btManager : NSObject{
     internal func errorHandler(_ centralManagerState: CBManagerState){
         switch centralManagerState {
         case .unsupported:
-            print("Device unsupported")
+            print("BLE Error = Device unsupported")
         case .unauthorized:
-            print("App unauthorized")
+            print("BLE Error = App unauthorized")
         case .unknown:
-            print("State unknown error")
+            print("BLE Error = State unknown error")
         @unknown default:
-            print("Unknown error")
+            print("BLE Error = Unknown error")
         }
     }
 
