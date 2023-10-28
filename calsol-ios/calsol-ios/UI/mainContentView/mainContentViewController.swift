@@ -42,7 +42,7 @@ class mainContentViewController : UIViewController{
         
         //
         
-        /*let testButtonWidth = self.view.frame.width * 0.4
+        let testButtonWidth = self.view.frame.width * 0.4
         let testButtonHeight = testButtonWidth * 0.6
         let testButtonFrame = CGRect(x: (self.view.frame.width / 2) - (testButtonWidth / 2), y: (self.view.frame.height / 2), width: testButtonWidth, height: testButtonHeight);
         let testButton = UIButton(frame: testButtonFrame);
@@ -55,11 +55,11 @@ class mainContentViewController : UIViewController{
         
         testButton.addTarget(self, action: #selector(self.handleTestClick), for: .touchUpInside)
         
-        self.view.addSubview(testButton);*/
+        self.view.addSubview(testButton);
         
         //
         
-        let mainContentViewFrame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height);
+        /*let mainContentViewFrame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height);
         mainContentView.frame = mainContentViewFrame;
         
         //mainContentView.backgroundColor = .systemRed
@@ -68,7 +68,7 @@ class mainContentViewController : UIViewController{
         
         //
         
-        updateContentIndex(defaultContentViewIndex);
+        updateContentIndex(defaultContentViewIndex);*/
     }
     
     internal func clearMainContentView(){

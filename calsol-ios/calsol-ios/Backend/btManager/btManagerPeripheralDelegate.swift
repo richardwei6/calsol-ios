@@ -45,13 +45,22 @@ extension btManager : CBPeripheralDelegate{
     }
     
     internal func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
-        print("discovered characteristics for \(service)")
-        print(" -> \(service.characteristics)")
-        print(service.characteristics?[0].value)
+        //print("discovered characteristics for \(service)")
+        
+        if service.uuid.uuidString == CBUUIDs.kBLEConsoleServiceUUID.uuidString{
+            print(" -> \(service.characteristics)") // contains rx/tx characteristics
+            
+            for characteristic in (service.characteristics!){
+                peripheral.setNotifyValue(true, for: characteristic);
+                peripheral.readValue(for: characteristic);
+            }
+            
+        }
     }
     
     internal func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?){
         //var characteristicASCIIValue = NSString()
+        print("value updated for characteristic \(characteristic)");
     }
     
 }

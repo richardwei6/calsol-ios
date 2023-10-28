@@ -10,7 +10,7 @@ import UIKit
 
 extension layoutViewController{
     @objc internal func handlePan(panGesture: UIPanGestureRecognizer){
-        
+        /*
         if (panGesture.state == .began || panGesture.state == .changed){
             let translation = panGesture.translation(in: self.view);
             panGesture.setTranslation(.zero, in: self.view);
@@ -26,7 +26,7 @@ extension layoutViewController{
             
             
         }
-       
+       */
         
     }
     
