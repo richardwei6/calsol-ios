@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreBluetooth
+import SwiftMsgPack
 
 extension btManager : CBPeripheralDelegate{
     
@@ -60,7 +61,21 @@ extension btManager : CBPeripheralDelegate{
     
     internal func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?){
         //var characteristicASCIIValue = NSString()
-        print("value updated for characteristic \(characteristic)");
+        //print("value updated for characteristic \(characteristic)");
+        guard let rawMsgPackData = characteristic.value else{
+            return;
+        }
+        
+        //print("received msgpack data \(rawMsgPackData)")
+        
+        do{
+            let msgpackData : Any? = try rawMsgPackData.unpack();
+            print("received unpacked data = \(msgpackData)")
+        }
+        catch{
+            print("error while unpacking \(error) -> \(rawMsgPackData as! NSData)")
+        }
+        
     }
     
 }
