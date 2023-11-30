@@ -16,6 +16,10 @@ class btManager : NSObject{
     
     //
     
+    internal static let telemetryBoardBLEDeviceName = "BLETelemetry1";
+    
+    //
+    
     internal var centralMgr : CBCentralManager!;
     internal var blePeripheral : CBPeripheral? = nil;
     
